@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="../pagina_inicial/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <title>Contato - Resiliaflix</title>
+</head>
+
+<body>
+    <!--Barra de Navegação-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="../pagina_inicial/index.html">
+                <img src="../pagina_inicial/img/logo_resiliaflix.png" width="100" height="100"
+                    class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../pagina_inicial/index.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/filmes.html">Filmes</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/series.html">Séries</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="../paginas_aux/contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-auto p-2 bd-highlight">
+                    <a class="btn btn-success my-2 my-sm-0 ml-2" type="button" href="login.html">Login</a>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+    <main class="main">
+        <!--Contato-->
+        <div class="jumbotron m-5">
+            <h1 class="display-4 cor-especial">Equipe</h1>
+            <p class="lead">Conheça quem trabalha no Resiliaflix:</p>
+            <hr class="my-2 mt-5">
+            <div class="d-flex justify-content-around resp">
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="./img/Augusto.jpg" class="card-img-top img-round p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Augusto Torres</h5>
+                        <p class="card-text">Contato: augusto@resiliaflix.com</p>
+                    </div>
+                </div>
+
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="./img/Bruno.png" class="card-img-top img-round p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruno Tadeu</h5>
+                        <p class="card-text">Contato: bruno@resiliaflix.com</p>
+                    </div>
+                </div>
+
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="./img/Douglas.jpeg" class="card-img-top img-round p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Douglas Mesquita</h5>
+                        <p class="card-text">Contato: douglas@resiliaflix.com</p>
+                    </div>
+                </div>
+
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="./img/Mainara.jpg" class="card-img-top img-round p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mainara Assis</h5>
+                        <p class="card-text">Contato: mainara@resiliaflix.com</p>
+                    </div>
+                </div>
+
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="./img/Marcus.jpg" class="card-img-top img-round p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcus Vinicius</h5>
+                        <p class="card-text">Contato: marcus@resiliaflix.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-2 mt-5">
+
+            <h3 class="display-4 cor-especial">Contato</h3>
+            <p class="lead">Gostaria de deixar uma mensagem? Adoraríamos saber o que você está achando da nossa
+                plataforma!</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="msgUserForm">Sua mensagem</label>
+                    <textarea class="form-control" id="msgUserForm" rows="3"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a type="submit" class="btn btn-success btn-lg pl-5 pr-5" href="../pagina_inicial/index.html" data-toggle="modal" data-target="#successModal">
+                        Enviar </a>
+                </div>
+            </form>
+            
+            <!--Modal Mensagem-->
+        <div class="modal fade" id="successModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-especial">
+                        <h5 class="modal-title" id="successModalLabel">Mensagem enviada!</h5>
+                    </div>
+                    <div class="modal-body">
+                        Obrigado pelo contato, esperamos você por aqui sempre que quiser se divertir no seu sofá.
+                    </div>
+                    <div class="modal-footer">
+                        <a type="button" class="btn btn-success" href="../pagina_inicial/index.html">Fechar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!--rodapé-->
+    <footer class="d-flex justify-content-center footer-cor">
+        <a href="../pagina_inicial/index.html">
+            <img src="../pagina_inicial/img/logo_resiliaflix.png" width="100" height="100"
+                class="d-inline-block align-top" alt="">
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    </script>
+</body>
+
+</html>
